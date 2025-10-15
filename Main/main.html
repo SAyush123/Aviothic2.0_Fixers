@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FactLens - Security & Privacy Platform</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-shield-alt"></i>
+          <span>FactLens</span>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#fake-news" class="nav-link">Fake News Detection</a>
+          </li>
+          <li class="nav-item">
+            <a href="#data-privacy" class="nav-link">Data Privacy</a>
+          </li>
+          <li class="nav-item">
+            <a href="#deepfakes" class="nav-link">Deepfake Detection</a>
+          </li>
+          <li class="nav-item">
+            <a href="#phishing" class="nav-link">Phishing Detection</a>
+          </li>
+          <li class="nav-item">
+            <a href="get_started/getstarted.html" class="nav-btn">Get Started</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Protect Your Digital World with
+            <span class="highlight">FactLens</span>
+          </h1>
+          <p class="hero-description">
+            A comprehensive security platform to detect fake content, protect
+            your privacy, and secure your online presence.
+          </p>
+          <div class="hero-buttons">
+            <a href="get_started/getstarted.html" class="btn primary">Try For Free</a>
+            <a href="#" class="btn secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-container">
+            <div class="security-shield">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="floating-icons">
+              <div class="icon fake-news">
+                <i class="fas fa-newspaper"></i>
+              </div>
+              <div class="icon data-privacy">
+                <i class="fas fa-user-shield"></i>
+              </div>
+              <div class="icon deepfake">
+                <i class="fas fa-video"></i>
+              </div>
+              <div class="icon phishing">
+                <i class="fas fa-fish"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title">Our Security Features</h2>
+        <p class="section-subtitle">
+          Comprehensive tools to protect you from digital threats
+        </p>
+
+        <div class="features-grid">
+          <!-- Fake News Detection -->
+          <div class="feature-card" id="fake-news">
+            <div class="feature-icon">
+              <i class="fas fa-newspaper"></i>
+            </div>
+            <h3 class="feature-title">Fake News Detection</h3>
+            <p class="feature-description">
+              Analyze articles, images, and social media posts to identify
+              misinformation and fake content.
+            </p>
+            <div class="feature-actions">
+              <a href="fake-news/index.html" class="feature-btn">Check Content</a>
+            </div>
+          </div>
+
+          <!-- Data Privacy Awareness -->
+          <div class="feature-card" id="data-privacy">
+            <div class="feature-icon">
+              <i class="fas fa-user-shield"></i>
+            </div>
+            <h3 class="feature-title">Data Privacy Awareness</h3>
+            <p class="feature-description">
+              See what permissions popular apps take and understand how your
+              data is being used.
+            </p>
+            <div class="feature-actions">
+              <a href="dashboard/index.html" class="feature-btn">View Dashboard</a>
+            </div>
+          </div>
+
+          <!-- Deepfake Detection -->
+          <div class="feature-card" id="deepfakes">
+            <div class="feature-icon">
+              <i class="fas fa-video"></i>
+            </div>
+            <h3 class="feature-title">Deepfake Detection</h3>
+            <p class="feature-description">
+              Upload images or videos to check for AI-generated content with
+              confidence scoring.
+            </p>
+            <div class="feature-actions">
+              <a href="deepfake/index.html" class="feature-btn">Analyze Media</a>
+            </div>
+          </div>
+
+          <!-- Phishing & Scams -->
+          <div class="feature-card" id="phishing">
+            <div class="feature-icon">
+              <i class="fas fa-fish"></i>
+            </div>
+            <h3 class="feature-title">Phishing & Online Scams</h3>
+            <p class="feature-description">
+              Check suspicious URLs and emails to identify potential phishing
+              attempts and scams.
+            </p>
+            <div class="feature-actions">
+              <a href="phishing/index.html" class="feature-btn"
+                >Scan URL/Email</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+      <div class="container">
+        <h2 class="section-title">How FactLens Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Upload or Paste Content</h3>
+            <p>Submit links, text, images, or videos you want to analyze</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>AI-Powered Analysis</h3>
+            <p>Our advanced algorithms scan and analyze the content</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Get Detailed Results</h3>
+            <p>Receive confidence scores and detailed breakdowns</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Secure Your Digital Life?</h2>
+        <p>
+          Join thousands of users who trust FactLens for their security and
+          privacy needs
+        </p>
+        <a href="#" class="btn primary large">Get Started Now</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="nav-logo">
+              <i class="fas fa-shield-alt"></i>
+              <span>FactLens</span>
+            </div>
+            <p>
+              Protecting your digital world from misinformation and threats.
+            </p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Features</h4>
+              <ul>
+                <li><a href="#fake-news">Fake News Detection</a></li>
+                <li><a href="#data-privacy">Data Privacy</a></li>
+                <li><a href="#deepfakes">Deepfake Detection</a></li>
+                <li><a href="#phishing">Phishing Detection</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Legal</h4>
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 FactLens. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

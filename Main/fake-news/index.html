@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fake News Detector</h1>
+            <p class="subtitle">Verify the authenticity of news articles and images</p>
+        </header>
+        
+        <div class="tabs">
+            <div class="tab active" data-tab="article">Article Detection</div>
+            <div class="tab" data-tab="image">Image Detection</div>
+            <div class="tab" data-tab="url">URL Analysis</div>
+        </div>
+        
+        <div class="tab-content active" id="article-tab">
+            <h2>Check News Article</h2>
+            <p>Paste the news article content below to analyze its authenticity.</p>
+            
+            <div class="input-group">
+                <label for="article-title">Article Title</label>
+                <input type="text" id="article-title" placeholder="Enter article title">
+            </div>
+            
+            <div class="input-group">
+                <label for="article-content">Article Content</label>
+                <textarea id="article-content" placeholder="Paste the full article content here..."></textarea>
+            </div>
+            
+            <button id="analyze-article">Analyze Article</button>
+            
+            <div class="result" id="article-result">
+                <div class="result-title" id="article-result-title">Analysis Result</div>
+                <div id="article-result-text"></div>
+                <div class="confidence" id="article-confidence"></div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="image-tab">
+            <h2>Check News Image</h2>
+            <p>Upload an image to check if it has been manipulated or is potentially fake.</p>
+            
+            <div class="input-group">
+                <label for="image-upload">Upload Image</label>
+                <input type="file" id="image-upload" accept="image/*">
+            </div>
+            
+            <div class="input-group">
+                <label for="image-url">Or Enter Image URL</label>
+                <input type="text" id="image-url" placeholder="https://example.com/image.jpg">
+            </div>
+            
+            <button id="analyze-image">Analyze Image</button>
+            
+            <div class="result" id="image-result">
+                <div class="result-title" id="image-result-title">Analysis Result</div>
+                <div id="image-result-text"></div>
+                <div class="confidence" id="image-confidence"></div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="url-tab">
+            <h2>Check News URL</h2>
+            <p>Enter the URL of a news article to analyze its source and content.</p>
+            
+            <div class="input-group">
+                <label for="news-url">News Article URL</label>
+                <input type="text" id="news-url" placeholder="https://example.com/news-article">
+            </div>
+            
+            <button id="analyze-url">Analyze URL</button>
+            
+            <div class="result" id="url-result">
+                <div class="result-title" id="url-result-title">Analysis Result</div>
+                <div id="url-result-text"></div>
+                <div class="confidence" id="url-confidence"></div>
+            </div>
+        </div>
+        
+        <div class="tips">
+            <h3>Tips to Identify Fake News</h3>
+            <ul>
+                <li>Check the source credibility and domain reputation</li>
+                <li>Look for spelling and grammatical errors</li>
+                <li>Verify the publication date</li>
+                <li>Cross-check with other reliable sources</li>
+                <li>Examine images for signs of manipulation</li>
+                <li>Be skeptical of sensational headlines</li>
+                <li>Check the author's credentials</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>Disclaimer: This tool provides analysis based on available data and algorithms. Results should be verified through additional sources.</p>
+            <p>&copy; 2025 Fake News Detector</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

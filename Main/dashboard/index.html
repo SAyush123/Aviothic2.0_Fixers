@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Privacy Awareness Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <h1>Data Privacy Dashboard</h1>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for an app...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="dashboard">
+            <aside class="sidebar">
+                <h2>Categories</h2>
+                <ul class="category-list">
+                    <li class="active"><i class="fas fa-mobile-alt"></i> All Apps</li>
+                    <li><i class="fas fa-shopping-cart"></i> Shopping</li>
+                    <li><i class="fas fa-gamepad"></i> Games</li>
+                    <li><i class="fas fa-comments"></i> Social Media</li>
+                    <li><i class="fas fa-utensils"></i> Food & Dining</li>
+                    <li><i class="fas fa-plane"></i> Travel</li>
+                    <li><i class="fas fa-heartbeat"></i> Health & Fitness</li>
+                </ul>
+            </aside>
+
+            <main class="main-content">
+                <div class="stats-cards">
+                    <div class="stat-card">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>24</h3>
+                        <p>High Risk Apps</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>156</h3>
+                        <p>Apps Analyzed</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-user-secret"></i>
+                        <h3>42%</h3>
+                        <p>Share Personal Data</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>18%</h3>
+                        <p>Increase in Privacy Concerns</p>
+                    </div>
+                </div>
+
+                <h2>Popular Apps & Their Permissions</h2>
+                <div class="apps-grid">
+                    <div class="app-card">
+                        <div class="app-header">
+                            <div class="app-icon" style="background-color: #3b5998;">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="app-info">
+                                <h3>Facebook</h3>
+                                <p>Social Media</p>
+                            </div>
+                        </div>
+                        <div class="app-permissions">
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-microphone"></i>
+                                    <span>Microphone</span>
+                                </div>
+                                <div class="permission-status status-danger">High Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> For voice messages, video calls, and voice-to-text features.</p>
+                                    <p><strong>Data usage:</strong> May record audio for ad targeting and content recommendations.</p>
+                                </div>
+                            </div>
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Camera</span>
+                                </div>
+                                <div class="permission-status status-warning">Medium Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> For taking photos and videos to share on the platform.</p>
+                                    <p><strong>Data usage:</strong> May analyze images for facial recognition and content tagging.</p>
+                                </div>
+                            </div>
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <div class="permission-status status-danger">High Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> For location tagging, local event suggestions, and friend discovery.</p>
+                                    <p><strong>Data usage:</strong> Tracks your location for targeted ads and content personalization.</p>
+                                </div>
+                            </div>
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-address-book"></i>
+                                    <span>Contacts</span>
+                                </div>
+                                <div class="permission-status status-danger">High Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> To find friends and connect with people you know.</p>
+                                    <p><strong>Data usage:</strong> Uploads and stores your contacts to improve social connections.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-header">
+                            <div class="app-icon" style="background-color: #25D366;">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="app-info">
+                                <h3>WhatsApp</h3>
+                                <p>Messaging</p>
+                            </div>
+                        </div>
+                        <div class="app-permissions">
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-microphone"></i>
+                                    <span>Microphone</span>
+                                </div>
+                                <div class="permission-status status-warning">Medium Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> For voice messages and voice calls.</p>
+                                    <p><strong>Data usage:</strong> Audio data is encrypted end-to-end and not stored on servers.</p>
+                                </div>
+                            </div>
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Camera</span>
+                                </div>
+                                <div class="permission-status status-warning">Medium Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> For taking photos and videos to send in chats.</p>
+                                    <p><strong>Data usage:</strong> Media is encrypted and only visible to conversation participants.</p>
+                                </div>
+                            </div>
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <div class="permission-status status-danger">High Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> To share your location with contacts.</p>
+                                    <p><strong>Data usage:</strong> Location data is shared only when you explicitly choose to share it.</p>
+                                </div>
+                            </div>
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-address-book"></i>
+                                    <span>Contacts</span>
+                                </div>
+                                <div class="permission-status status-danger">High Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> To find other WhatsApp users in your contact list.</p>
+                                    <p><strong>Data usage:</strong> Contacts are uploaded to servers to facilitate connections.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-header">
+                            <div class="app-icon" style="background-color: #FF0000;">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="app-info">
+                                <h3>YouTube</h3>
+                                <p>Video Streaming</p>
+                            </div>
+                        </div>
+                        <div class="app-permissions">
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-microphone"></i>
+                                    <span>Microphone</span>
+                                </div>
+                                <div class="permission-status status-success">Low Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> For voice search functionality.</p>
+                                    <p><strong>Data usage:</strong> Voice data may be used to improve speech recognition.</p>
+                                </div>
+                            </div>
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Camera</span>
+                                </div>
+                                <div class="permission-status status-success">Low Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> For creating video content directly in the app.</p>
+                                    <p><strong>Data usage:</strong> Camera access is only used when recording videos for upload.</p>
+                                </div>
+                            </div>
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <div class="permission-status status-warning">Medium Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> For localized content and regional restrictions.</p>
+                                    <p><strong>Data usage:</strong> Used to provide location-relevant content and ads.</p>
+                                </div>
+                            </div>
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-history"></i>
+                                    <span>Watch History</span>
+                                </div>
+                                <div class="permission-status status-warning">Medium Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> To provide personalized recommendations.</p>
+                                    <p><strong>Data usage:</strong> Tracks viewing habits to suggest relevant content and ads.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="app-header">
+                            <div class="app-icon" style="background-color: #000000;">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <div class="app-info">
+                                <h3>Google Drive</h3>
+                                <p>Cloud Storage</p>
+                            </div>
+                        </div>
+                        <div class="app-permissions">
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-hdd"></i>
+                                    <span>Storage</span>
+                                </div>
+                                <div class="permission-status status-success">Low Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> To save, access, and manage your files in the cloud.</p>
+                                    <p><strong>Data usage:</strong> Files are stored encrypted on Google servers for backup and sync.</p>
+                                </div>
+                            </div>
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Camera</span>
+                                </div>
+                                <div class="permission-status status-success">Low Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> To scan documents and upload photos directly.</p>
+                                    <p><strong>Data usage:</strong> Only accesses camera when you explicitly use the scan feature.</p>
+                                </div>
+                            </div>
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-microphone"></i>
+                                    <span>Microphone</span>
+                                </div>
+                                <div class="permission-status status-success">Low Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> For voice notes and audio recordings.</p>
+                                    <p><strong>Data usage:</strong> Only records when you explicitly use voice recording features.</p>
+                                </div>
+                            </div>
+                            <div class="permission-item">
+                                <div class="permission-name">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <div class="permission-status status-warning">Medium Risk</div>
+                                <div class="permission-details">
+                                    <p><strong>Why needed:</strong> For location-based file organization and sharing.</p>
+                                    <p><strong>Data usage:</strong> May use location to tag files and provide contextual suggestions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="permission-explanation">
+                    <h2>Why Apps Request Permissions</h2>
+                    <div class="explanation-grid">
+                        <div class="explanation-card">
+                            <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                            <p><strong>Legitimate uses:</strong></p>
+                            <ul>
+                                <li>Navigation and mapping services</li>
+                                <li>Location-based recommendations</li>
+                                <li>Weather information</li>
+                                <li>Ride-sharing services</li>
+                            </ul>
+                            <p><strong>Privacy concerns:</strong></p>
+                            <ul>
+                                <li>Tracking your daily routines</li>
+                                <li>Building detailed location profiles</li>
+                                <li>Targeted advertising based on places visited</li>
+                            </ul>
+                        </div>
+                        <div class="explanation-card">
+                            <h3><i class="fas fa-microphone"></i> Microphone</h3>
+                            <p><strong>Legitimate uses:</strong></p>
+                            <ul>
+                                <li>Voice commands and searches</li>
+                                <li>Voice and video calls</li>
+                                <li>Audio recording features</li>
+                                <li>Voice-to-text functionality</li>
+                            </ul>
+                            <p><strong>Privacy concerns:</strong></p>
+                            <ul>
+                                <li>Potential background listening</li>
+                                <li>Capturing private conversations</li>
+                                <li>Voice data analysis for advertising</li>
+                            </ul>
+                        </div>
+                        <div class="explanation-card">
+                            <h3><i class="fas fa-hdd"></i> Storage</h3>
+                            <p><strong>Legitimate uses:</strong></p>
+                            <ul>
+                                <li>Saving app data and preferences</li>
+                                <li>Downloading content for offline use</li>
+                                <li>Backup and sync functionality</li>
+                                <li>Media management</li>
+                            </ul>
+                            <p><strong>Privacy concerns:</strong></p>
+                            <ul>
+                                <li>Access to personal files and photos</li>
+                                <li>Extracting contact information</li>
+                                <li>Reading other app data</li>
+                            </ul>
+                        </div>
+                        <div class="explanation-card">
+                            <h3><i class="fas fa-address-book"></i> Contacts</h3>
+                            <p><strong>Legitimate uses:</strong></p>
+                            <ul>
+                                <li>Finding friends on social platforms</li>
+                                <li>Sharing content with contacts</li>
+                                <li>Communication apps</li>
+                                <li>Emergency contact features</li>
+                            </ul>
+                            <p><strong>Privacy concerns:</strong></p>
+                            <ul>
+                                <li>Building social graphs without consent</li>
+                                <li>Uploading entire contact lists to servers</li>
+                                <li>Using contacts for marketing purposes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="privacy-tips">
+                    <h2>Privacy Protection Tips</h2>
+                    <ul class="tips-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Review App Permissions</h3>
+                                <p>Regularly check and limit app permissions to only what's necessary. Disable permissions that aren't essential for the app's core functionality.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Use Two-Factor Authentication</h3>
+                                <p>Enable 2FA on all your important accounts for added security. This prevents unauthorized access even if your password is compromised.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Be Cautious with Public Wi-Fi</h3>
+                                <p>Avoid accessing sensitive information on public networks. Use a VPN when connecting to public Wi-Fi to encrypt your data.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Read Privacy Policies</h3>
+                                <p>Understand how companies collect and use your data. Look for apps that have transparent privacy practices and data minimization policies.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Data Privacy Awareness Dashboard &copy; 2025 | Understand how your data is being used</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FactLens — Phishing & Online Scam Detection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo-container">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="title">
+                    <h1>FactLens</h1>
+                    <div class="subtitle">Phishing & Online Scam Detection</div>
+                </div>
+            </div>
+        </div>
+
+        <p class="lead">Paste a suspicious URL or email content for analysis. Our heuristic checks identify potential threats while keeping your data secure in the browser.</p>
+
+        <div class="grid">
+            <div class="card">
+                <div class="tabs" role="tablist" aria-label="Input type">
+                    <button id="tab-url" class="active"><i class="fas fa-link"></i> URL Analysis</button>
+                    <button id="tab-email"><i class="fas fa-envelope"></i> Email Analysis</button>
+                </div>
+
+                <div id="input-area">
+                    <div id="url-panel">
+                        <label class="small">Enter suspicious URL to analyze:</label>
+                        <textarea id="url-input" placeholder="https://example.com/login?user=..."></textarea>
+                        <div class="btn-group">
+                            <button id="analyze-url" class="btn-primary"><i class="fas fa-search"></i> Analyze URL</button>
+                            <button id="clear-url" class="btn-quiet"><i class="fas fa-eraser"></i> Clear</button>
+                            <button id="example-url" class="btn-quiet"><i class="fas fa-eye"></i> Load Example</button>
+                        </div>
+                        <div class="example">
+                            <strong>Example patterns we detect:</strong> IP addresses (http://192.168.1.2), punycode domains (xn--), long random subdomains, credentials in URLs, excessive encoding, suspicious TLDs (.tk .ml .cf), and more.
+                        </div>
+                    </div>
+
+                    <div id="email-panel" style="display:none;">
+                        <label class="small">Paste email headers or content for analysis:</label>
+                        <textarea id="email-input" placeholder="From: 'PayPal Support' &lt;support@paypal-account.com&gt;"></textarea>
+                        <div class="btn-group">
+                            <button id="analyze-email" class="btn-primary"><i class="fas fa-search"></i> Analyze Email</button>
+                            <button id="clear-email" class="btn-quiet"><i class="fas fa-eraser"></i> Clear</button>
+                            <button id="example-email" class="btn-quiet"><i class="fas fa-eye"></i> Load Example</button>
+                        </div>
+                        <div class="example">
+                            <strong>Analysis includes:</strong> Sender domain reputation, display name spoofing, header anomalies, and suspicious patterns in email addresses.
+                        </div>
+                    </div>
+                </div>
+
+                <div id="notes" class="meta">
+                    <i class="fas fa-info-circle"></i> <strong>Note:</strong> This tool uses heuristic analysis only. For critical decisions, verify with multi-engine scanners (VirusTotal, Google Safe Browsing) or consult security professionals.
+                </div>
+            </div>
+
+            <aside class="card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                
+                <div class="result-header">
+                    <div>
+                        <div class="small">Risk Assessment</div>
+                        <div id="riskSummary" class="score">—</div>
+                    </div>
+                    <div class="last-checked">
+                        <div class="small">Last Analysis</div>
+                        <div id="lastChecked" class="small">—</div>
+                    </div>
+                </div>
+                
+                <div id="riskMeter" class="risk-meter">
+                    <div class="risk-fill low"></div>
+                </div>
+
+                <div id="advice" class="advice ok">
+                    <i class="fas fa-info-circle"></i> Enter content to analyze
+                </div>
+
+                <div id="flags" class="result">
+                    <div class="small">Analysis results will appear here after scanning.</div>
+                </div>
+
+                <div style="margin-top:20px;">
+                    <div class="small">Quick Actions</div>
+                    <div class="action-buttons">
+                        <button id="copy-result" class="copy"><i class="fas fa-copy"></i> Copy Summary</button>
+                        <button id="show-domain" class="copy"><i class="fas fa-globe"></i> Show Domain</button>
+                    </div>
+                </div>
+
+                <div style="margin-top:20px;">
+                    <div class="small">Risk Scoring</div>
+                    <ul class="list" style="margin-top:12px;">
+                        <li class="small"><span style="color:var(--good)">●</span> 0-39: LOW risk (minimal red flags)</li>
+                        <li class="small"><span style="color:var(--warn)">●</span> 40-69: MEDIUM risk (suspicious elements)</li>
+                        <li class="small"><span style="color:var(--danger)">●</span> 70-100: HIGH risk (likely malicious)</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            <div>Built with security in mind — all analysis happens locally in your browser. &copy; 2023 FactLens Security</div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
